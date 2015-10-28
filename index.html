@@ -20,7 +20,7 @@
   <div class="horizontalLine"> <hr></hr>
   </div>
 
-  <img src="NickCage.jpg" alt="Mountain View" style="width:304px;height:228px;">
+  <p><img src="NickCage.jpg" alt="Mountain View" style="width:304px;height:228px;"></p>
 
 <h2>Thank you, thank you everyone! It's great to be here!</h2>
 
@@ -33,6 +33,8 @@
 
   function alertFunny() {
     alert("Whoa, I said to click a square! That button seemed rather rectangular to me. Just sayin'.")
+    var audio = new Audio('CageWhy.mp3');
+    audio.play();
   };
 
   function askQuestionOne() {
@@ -40,8 +42,12 @@
     var answerOneCaps=answerOne.toUpperCase();
     if (answerOneCaps==="GRANT") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageEvo.mp3');
+      audio.play();
     } else {
-    alert(answerOneCaps + "?" + " That is incorrect! Whoa! ")
+      alert(answerOneCaps + "?" + " That is incorrect! Whoa! ");
+      var audio = new Audio('CageDis.mp3');
+      audio.play();
   }};
 
   function askQuestionTwo() {
@@ -49,8 +55,12 @@
     var answerTwoCaps=answerTwo.toUpperCase();
     if (answerTwoCaps==="NEPTUNE") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageThanks.mp3');
+      audio.play();
     } else {
-    alert(answerTwoCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerTwoCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageCage.mp3');
+    audio.play();
   }};
 
   function askQuestionThree() {
@@ -58,17 +68,25 @@
     var answerThreeCaps=answerThree.toUpperCase();
     if (answerThreeCaps==="WRIGHT") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageTyler.mp3');
+      audio.play();
     } else {
-    alert(answerThreeCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerThreeCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageEdison.mp3');
+    audio.play();
   }};
 
   function askQuestionFour() {
-    var answerFour=prompt("What's the first name of long-time Chicago Cubs announcer 'Caray,' known to sing 'Take Me Out to the Ball Game' at Cubs home games?")
+    var answerFour=prompt("Which baseball team from Kansas City won the first game of the 2015's World Series?")
     var answerFourCaps=answerFour.toUpperCase();
-    if (answerFourCaps==="HARRY") {
+    if (answerFourCaps==="ROYALS") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageChamp.mp3');
+      audio.play();
     } else {
-    alert(answerFourCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerFourCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageMuffin.mp3');
+    audio.play();
   }};
 
   function askQuestionFive() {
@@ -76,8 +94,12 @@
     var answerFiveCaps=answerFive.toUpperCase();
     if (answerFiveCaps==="JEWEL") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageEvo.mp3');
+      audio.play();
     } else {
-    alert(answerFiveCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerFiveCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageListen.mp3');
+    audio.play();
   }};
 
   function askQuestionSix() {
@@ -85,8 +107,12 @@
     var answerSixCaps=answerSix.toUpperCase();
     if (answerSixCaps==="212") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageThanks.mp3');
+      audio.play();
     } else {
-    alert(answerSixCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerSixCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageBurn.mp3');
+    audio.play();
   }};
 
   function askQuestionSeven() {
@@ -94,8 +120,12 @@
     var answerSevenCaps=answerSeven.toUpperCase();
     if (answerSevenCaps==="MATTHEW") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageWrong.mp3');
+      audio.play();
     } else {
-    alert(answerSevenCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerSevenCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageWrong.mp3');
+    audio.play();
   }};
 
   function askQuestionEight() {
@@ -103,8 +133,12 @@
     var answerEightCaps=answerEight.toUpperCase();
     if (answerEightCaps==="OKLAHOMA") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageABC.mp3');
+      audio.play();
     } else {
-    alert(answerEightCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerEightCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageBurn.mp3');
+    audio.play();
   }};
 
   function askQuestionNine() {
@@ -112,8 +146,12 @@
     var answerNineCaps=answerNine.toUpperCase();
     if (answerNineCaps==="MARCH") {
       alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+      var audio = new Audio('CageEvo.mp3');
+      audio.play();
     } else {
-    alert(answerNineCaps + "?" + " That is incorrect! Whoa! ")
+    alert(answerNineCaps + "?" + " That is incorrect! Whoa! ");
+    var audio = new Audio('CageBees.mp3');
+    audio.play();
   }};
 
   </script>
@@ -141,6 +179,11 @@
       </tr>
     </tfoot>
   </table>
+
+<p>
+  <center>
+    <p><div id="rectangle"><p>Thanks for playing Low-Budget Trivia!<p></div><p><p>
+  </center>
 
 </body>
 </html>
