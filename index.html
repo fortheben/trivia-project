@@ -1,0 +1,146 @@
+<!doctype HTML>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Low-budget Trivia!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h2>It's time for...Low-budget Trivia!</h1>
+  <div class="verticalLine"> And here's your host...NICK...CAGE!!!
+  </div>
+
+  <div class="horizontalLine"> <hr></hr>
+  </div>
+
+  <img src="NickCage.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+<h2>Thank you, thank you everyone! It's great to be here!</h2>
+
+<h3>Let's get right into it and play some trivia.</h3>
+<h4>(IT'S TIME TO ENTER THE TRIVIA CAGE)</h4>
+
+  <p><button onclick="alertFunny()">Click a square</button> for the first question!</p>
+
+  <script>
+
+  function alertFunny() {
+    alert("Whoa, I said to click a square! That button seemed rather rectangular to me. Just sayin'.")
+  };
+
+  function askQuestionOne() {
+    var answerOne=prompt("Who is buried in Grant's tomb?");
+    var answerOneCaps=answerOne.toUpperCase();
+    if (answerOneCaps==="GRANT") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerOneCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionTwo() {
+    var answerTwo=prompt("Which planet is farthest from the sun?")
+    var answerTwoCaps=answerTwo.toUpperCase();
+    if (answerTwoCaps==="NEPTUNE") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerTwoCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionThree() {
+    var answerThree=prompt("Which brothers are commonly known as being the 'First in Flight?'")
+    var answerThreeCaps=answerThree.toUpperCase();
+    if (answerThreeCaps==="WRIGHT") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerThreeCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionFour() {
+    var answerFour=prompt("What's the first name of long-time Chicago Cubs announcer 'Caray,' known to sing 'Take Me Out to the Ball Game' at Cubs home games?")
+    var answerFourCaps=answerFour.toUpperCase();
+    if (answerFourCaps==="HARRY") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerFourCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionFive() {
+    var answerFive=prompt("What's the first name of famed American singer-songwriter 'Jewel?'")
+    var answerFiveCaps=answerFive.toUpperCase();
+    if (answerFiveCaps==="JEWEL") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerFiveCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionSix() {
+    var answerSix=prompt("What's the temperature, in degrees fahrenheit, at which water boils?")
+    var answerSixCaps=answerSix.toUpperCase();
+    if (answerSixCaps==="212") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerSixCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionSeven() {
+    var answerSeven=prompt("Of Matthew, Mark, Luke, and John, whose account of the Gospel appears first in most printed versions of the Bible?")
+    var answerSevenCaps=answerSeven.toUpperCase();
+    if (answerSevenCaps==="MATTHEW") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerSevenCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionEight() {
+    var answerEight=prompt("Which state is the only one to have its own name in its capital city's name?")
+    var answerEightCaps=answerEight.toUpperCase();
+    if (answerEightCaps==="OKLAHOMA") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerEightCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  function askQuestionNine() {
+    var answerNine=prompt("Daylight Savings time involves 'falling back' this coming weekend, and 'springing forward' in which calendar month?''");
+    var answerNineCaps=answerNine.toUpperCase();
+    if (answerNineCaps==="MARCH") {
+      alert("Whoa! Totally correct, you CAGED that question! Awesome!");
+    } else {
+    alert(answerNineCaps + "?" + " That is incorrect! Whoa! ")
+  }};
+
+  </script>
+
+  <table class="center">
+    <thead>
+      <tr>
+        <td data-num="0"><button onclick="askQuestionOne()">1</button></td>
+        <td data-num="1"><button onclick="askQuestionTwo()">2</button></td>
+        <td data-num="2"><button onclick="askQuestionThree()">3</button></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-num="3"><button onclick="askQuestionFour()">4</button></td>
+        <td data-num="4"><button onclick="askQuestionFive()">5</button></td>
+        <td data-num="5"><button onclick="askQuestionSix()">6</button></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td data-num="6"><button onclick="askQuestionSeven()">7</button></td>
+        <td data-num="7"><button onclick="askQuestionEight()">8</button></td>
+        <td data-num="8"><button onclick="askQuestionNine()">9</button></td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
