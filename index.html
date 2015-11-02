@@ -17,11 +17,12 @@
   <div class="verticalLine"> And here's your host...NICK...CAGE!!!
   </div>
 
+<!-- Work on separating your semantics from your style. Unless you're writing code in 1998, you should never have classes like "horizontalLine", nor use tags like <center>. All of your styling should be done in your CSS. -->
   <div class="horizontalLine"> <hr></hr>
   </div>
 
   <p><img src="NickCage.jpg" alt="Mountain View" style="width:304px;height:228px;"></p>
-
+<!-- Watch your indentation! -->
 <h2>Thank you, thank you everyone! It's great to be here!</h2>
 
 <h3>Let's get right into it and play some trivia.</h3>
@@ -29,6 +30,7 @@
 
   <p><button onclick="alertFunny()">Click a square</button> for the first question!</p>
 
+<!-- Let me know if you're having trouble linking to external script files. We should fix that sooner rather than later! -->
   <script>
 
   function alertFunny() {
@@ -48,6 +50,7 @@
       alert(answerOneCaps + "?" + " That is incorrect! Whoa! ");
       var audio = new Audio('CageDis.mp3');
       audio.play();
+      // I've never used Audio before. Cool!
   }};
 
   function askQuestionTwo() {
@@ -58,6 +61,7 @@
       var audio = new Audio('CageThanks.mp3');
       audio.play();
     } else {
+      // Watch your indentation on these!
     alert(answerTwoCaps + "?" + " That is incorrect! Whoa! ");
     var audio = new Audio('CageCage.mp3');
     audio.play();
